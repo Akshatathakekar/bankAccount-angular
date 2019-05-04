@@ -1,0 +1,78 @@
+
+<br><br><br>
+
+<div class="container" style="width:40%">
+  <h6 class="text-center">create account</h6>
+
+  <!-- {{customerForm.value |json}} -->
+  <form >
+      <div class="form-group">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" required>
+   
+                </div>
+     
+     
+<!-- 
+      <div class="form-group">
+          <label class="form-label">Gender &nbsp;&nbsp;</label>
+          <div class="form-check form-check-inline">
+              <input type="radio" name="gender" value="Male"
+                  class="form-check-input" required   [(ngModel)]="customer.gender"/>Male
+          </div>
+          <div class="form-check form-check-inline">
+                  <input type="radio" name="gender" value="Female"
+                      class="form-check-input" required  [(ngModel)]="customer.gender"/>Female
+              </div>
+           
+      </div> -->
+      <div class="form-group">
+          <label class="form-label">Balance</label>
+          <input type="text" class="form-control" required name="addressLine1" required>
+      </div>
+
+
+      <div class="form-group">
+          <label class="form-label">Account Type</label>
+          <select required class="form-control" required name="state" >
+              <option value="">--Select--</option>
+              <option value="saving">saving Account</option>
+              <option value="current">Current Account</option>
+
+          </select>
+
+      </div>
+     
+      <div class="form-group">
+              <label class="form-label">ODLimit</label>
+              <input type="number" class="form-control" required name="postalCode" > 
+      </div>
+      <h6 class="text-center">
+        <a routerLink="account">
+          <button type="submit" class="btn btn-block btn-primary" >Create Account</button></a>
+      </h6>
+      <br><br>
+      <h6 class="text-center">
+
+        <button type="submit" class="btn btn-block btn-primary" >Get all Details</button>
+    </h6><br><br>
+    <!-- <h6 class="text-center">
+        <a routerLink="get">
+          <button type="submit" class="btn btn-block btn-primary" >Get Account</button></a>
+      </h6> -->
+      <br><br>
+    <h6 class="text-center">
+
+      <button type="submit" class="btn btn-block btn-primary" >Transcation</button>
+  </h6>
+      <br>
+  </form>
+
+</div>
+<form>
+    Account Id:<input type="text" name="id" >
+    <h6 class="text-center">
+        <a routerLink="account/4">
+          <button type="submit" class="btn btn-block btn-primary" style="width:200px" >Get Account</button></a>
+      </h6>
+</form>
